@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +7,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent {
   @Output() toggleSidebarStatus = new EventEmitter<boolean>();
+  @Input() isMobileScreen: boolean = false;
 
   toggleSidebar() {
-    this.toggleSidebarStatus.emit(true);
+    this.toggleSidebarStatus.emit();
   }
 }

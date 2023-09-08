@@ -1,9 +1,9 @@
 <mat-drawer-container>
-  <mat-drawer mode="side" [opened]="sidebarToggle">
+  <mat-drawer [mode]="isMobile ? 'over' : 'side'" [opened]="isMobile ? 'false' : 'true'">
     <app-side-nav></app-side-nav>
   </mat-drawer>
   <mat-drawer-content>
-    <app-header (toggleSidebarStatus)="sidebarToggler()"></app-header>
+    <app-header [isMobileScreen]="isMobile" (toggleSidebarStatus)="sidebarToggler()"></app-header>
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
