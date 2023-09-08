@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blingg-jewellery-admin-web';
+  sidebarToggle: boolean = true;
+
+  sidebarToggler() {
+    this.sidebarToggle = !this.sidebarToggle;
+  }
 }
