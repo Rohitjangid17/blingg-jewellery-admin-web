@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-
+  previousPage: string = "Home";
+  title: string = "Products";
 }
