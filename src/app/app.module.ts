@@ -14,6 +14,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SideNavComponent } from './layout/side-nav/side-nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { CustomHeaderComponent } from './shared/component/custom-header/custom-header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductsComponent } from './pages/products/products.component';
     HeaderComponent,
     SideNavComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    CustomHeaderComponent
   ],
   imports: [
     BrowserModule,
