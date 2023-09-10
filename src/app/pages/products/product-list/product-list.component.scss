@@ -1,0 +1,20 @@
+.product-search-input-box::placeholder {
+    color: #1E293B;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.grid-view-material-icon,
+.list-view-material-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #1E293B;
+}
+
+.btn-default {
+    background-color: #1E293B !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 7px 25px;
+}

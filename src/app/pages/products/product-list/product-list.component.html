@@ -1,0 +1,20 @@
+<div class="px-4 pt-3">
+    <app-custom-header [previousPage]="previousPage" [title]="title"></app-custom-header>
+
+    <div class="d-flex align-items-center justify-content-between flex-wrap mt-4">
+        <div class="w-25">
+            <input type="search" class="form-control shadow-none w-100  bg-white product-search-input-box border"
+                placeholder="Search products" />
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+            <div class="d-flex gap-1">
+                <mat-icon class="grid-view-material-icon">grid_view</mat-icon>
+                <mat-icon class="list-view-material-icon">list</mat-icon>
+            </div>
+
+            <button class="btn btn-default shadow-none border-0" (click)="navigateProductDetails(0)">Add
+                Products</button>
+        </div>
+    </div>
+</div>

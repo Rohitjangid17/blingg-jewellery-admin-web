@@ -15,6 +15,8 @@ import { SideNavComponent } from './layout/side-nav/side-nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CustomHeaderComponent } from './shared/component/custom-header/custom-header.component';
+import { ProductListComponent } from './pages/products/product-list/product-list.component';
+import { ProductDetailsComponent } from './pages/products/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CustomHeaderComponent } from './shared/component/custom-header/custom-h
     SideNavComponent,
     HomeComponent,
     ProductsComponent,
-    CustomHeaderComponent
+    CustomHeaderComponent,
+    ProductListComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
