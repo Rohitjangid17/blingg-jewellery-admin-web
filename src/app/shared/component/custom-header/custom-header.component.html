@@ -1,10 +1,7 @@
-<div class="p-4">
-    <div class="rounded-pill custom-back-btn">
-        <a [routerLink]="['../']" class="d-flex align-items-center gap-2 text-decoration-none"
-            style=" padding: 8px 20px;">
-            <mat-icon>keyboard_backspace</mat-icon>
-            <p class="m-0 back-btn-para">Back to {{previousPage}}</p>
-        </a>
-    </div>
-    <p class="mt-2 module-header">{{title}}</p>
+<div class="rounded-pill custom-back-btn">
+    <a [routerLink]="['../']" class="d-flex align-items-center gap-2 text-decoration-none back-btn-link">
+        <mat-icon>keyboard_backspace</mat-icon>
+        <p class="m-0 back-btn-para">Back to {{previousPage}}</p>
+    </a>
 </div>
+<p class="mt-2 module-header">{{title}}</p>

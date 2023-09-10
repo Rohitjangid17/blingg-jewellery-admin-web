@@ -1,11 +1,15 @@
 .custom-back-btn {
     display: inline-block;
-    margin-left: -16px;
+    margin-left: -20px;
 
     &:hover {
         background: #EEEEEE;
         transition: all 0.2s ease;
     }
+}
+
+.back-btn-link {
+    padding: 8px 20px;
 }
 
 mat-icon {
