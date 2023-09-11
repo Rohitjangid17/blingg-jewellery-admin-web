@@ -8,6 +8,7 @@ import { OrdersComponent } from './pages/orders/orders.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { PagesComponent } from './pages/pages/pages.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { SliderImageComponent } from './pages/slider-image/slider-image.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
   },
   {
     path: "pages", component: PagesComponent
+  },
+  {
+    path: "slider-image", component: SliderImageComponent
   },
   {
     path: "settings", component: SettingsComponent

@@ -23,6 +23,7 @@ import { OrdersComponent } from './pages/orders/orders.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { PagesComponent } from './pages/pages/pages.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { SliderImageComponent } from './pages/slider-image/slider-image.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
     OrdersComponent,
     CategoriesComponent,
     PagesComponent,
-    SettingsComponent
+    SettingsComponent,
+    SliderImageComponent
   ],
   imports: [
     BrowserModule,
