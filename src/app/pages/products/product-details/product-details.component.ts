@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent {
+  title: string = "Product Details";
+  previousPage: string = "Products";
 
+  compressImage() {
+    console.log("compress image!!!");
+  }
 }
