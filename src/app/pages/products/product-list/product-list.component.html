@@ -9,8 +9,14 @@
 
         <div class="d-flex align-items-center gap-4">
             <div class="d-flex gap-1">
-                <mat-icon class="grid-view-material-icon">grid_view</mat-icon>
-                <mat-icon class="list-view-material-icon">list</mat-icon>
+                <button mat-icon-button class="btn border-0 p-0 text-secondary" (click)="updateLocalStorage('grid')">
+                    <mat-icon class="grid-view-material-icon d-flex align-items-center justify-content-center"
+                        [ngClass]="{'screen-set': screenView}">grid_view</mat-icon>
+                </button>
+                <button mat-icon-button class="btn border-0 p-0 text-secondary" (click)="updateLocalStorage('list')">
+                    <mat-icon class="grid-view-material-icon d-flex align-items-center justify-content-center"
+                        [ngClass]="{'screen-set':!screenView}">list</mat-icon>
+                </button>
             </div>
 
             <button class="btn btn-default shadow-none border-0" (click)="navigateProductDetails(0)">Add
@@ -18,41 +24,49 @@
         </div>
     </div>
 
-    <div class="row mt-4 overflow-scroll product-card-screen">
-        <ng-container *ngFor="let product of productList">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
-                <div class="card border shadow-sm">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class=" d-flex gap-2">
-                            <img src="https://dkcut7rvj02cb.cloudfront.net/products/default/vsuszanmk6/SMALL/Rectangle%203.png"
-                                class="img-fluid product-image" alt="no image" />
-                            <p class="product-name m-0 text-secondary">Product: {{product?.productName}}</p>
-                        </div>
-                        <div class="d-flex gap-1 align-items-center">
-                            <!-- product share button -->
-                            <button mat-icon-button class="btn border-0 p-0 text-secondary">
-                                <mat-icon class="share-material-icon">share</mat-icon>
-                            </button>
-                            <!-- vert menu button -->
-                            <button mat-icon-button [matMenuTriggerFor]="menu" class="btn border-0 p-0 text-secondary">
-                                <mat-icon>more_vert</mat-icon>
-                            </button>
-                            <mat-menu #menu="matMenu">
-                                <!-- product edit button -->
-                                <button mat-menu-item>
-                                    <mat-icon class="text-secondary">edit</mat-icon>
-                                    <span class="text-secondary">Edit</span>
+    <ng-container *ngIf="screenView; else listView">
+        <div class="row mt-4 overflow-scroll product-card-screen">
+            <ng-container *ngFor="let product of productList">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card border shadow-sm">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class=" d-flex gap-2">
+                                <img src="https://dkcut7rvj02cb.cloudfront.net/products/default/vsuszanmk6/SMALL/Rectangle%203.png"
+                                    class="img-fluid product-image" alt="no image" />
+                                <p class="product-name m-0 text-secondary">Product: {{product?.productName}}</p>
+                            </div>
+                            <div class="d-flex gap-1 align-items-center">
+                                <!-- product share button -->
+                                <button mat-icon-button class="btn border-0 p-0 text-secondary">
+                                    <mat-icon class="share-material-icon">share</mat-icon>
                                 </button>
-                                <!-- product delete button -->
-                                <button mat-menu-item>
-                                    <mat-icon class="text-secondary">delete</mat-icon>
-                                    <span class="text-secondary">Delete</span>
+                                <!-- vert menu button -->
+                                <button mat-icon-button [matMenuTriggerFor]="menu"
+                                    class="btn border-0 p-0 text-secondary">
+                                    <mat-icon>more_vert</mat-icon>
                                 </button>
-                            </mat-menu>
+                                <mat-menu #menu="matMenu">
+                                    <!-- product edit button -->
+                                    <button mat-menu-item>
+                                        <mat-icon class="text-secondary">edit</mat-icon>
+                                        <span class="text-secondary">Edit</span>
+                                    </button>
+                                    <!-- product delete button -->
+                                    <button mat-menu-item>
+                                        <mat-icon class="text-secondary">delete</mat-icon>
+                                        <span class="text-secondary">Delete</span>
+                                    </button>
+                                </mat-menu>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </ng-container>
-    </div>
+            </ng-container>
+        </div>
+    </ng-container>
+
+    <ng-template #listView>
+        <div>list view!!!</div>
+    </ng-template>
+
 </div>

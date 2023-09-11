@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
   previousPage: string = "Home";
   title: string = "Products";
   productList: Product[] = [];
+  screenView: boolean = true;
 
   constructor(
     private _router: Router,
@@ -27,6 +28,14 @@ export class ProductListComponent implements OnInit {
     this._router.navigate(["./product-details/", id], {
       relativeTo: this._activatedRoute
     })
+  }
+
+  updateLocalStorage(status: string) {
+    if (status === "grid") {
+      this.screenView = true;
+    } else if (status === "list") {
+      this.screenView = false;
+    }
   }
 
   getProductList() {
