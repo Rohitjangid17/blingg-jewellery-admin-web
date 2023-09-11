@@ -12,4 +12,8 @@ export class ProductDetailsComponent {
   compressImage() {
     console.log("compress image!!!");
   }
+
+  onCreateProduct() {
+    console.log("product create api call!!!");
+  }
 }

@@ -8,7 +8,7 @@
     <div class="container-fluid mt-2">
         <form>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mt-3">
                         <label>Product Name</label>
                         <input type="text"
@@ -16,7 +16,7 @@
                             placeholder="Enter product name" />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mt-3">
                         <label>Product Category</label>
                         <input type="text"
@@ -24,7 +24,7 @@
                             placeholder="Enter product category" />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mt-3">
                         <label>Product Price</label>
                         <input type="text"
@@ -32,7 +32,7 @@
                             placeholder="Enter product price" />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group mt-3">
                         <label>Product Discount Price</label>
                         <input type="text"
@@ -40,7 +40,7 @@
                             placeholder="Enter product discount price" />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="form-group mt-3">
                         <label>Product Discription</label>
                         <textarea rows="4"
@@ -51,7 +51,7 @@
             </div>
 
             <div class="d-flex justify-content-end">
-                <button class="btn btn-default shadow-none border-0 mt-4 mb-2">Save</button>
+                <button class="btn btn-default shadow-none border-0 mt-4 mb-2" (click)="onCreateProduct()">Save</button>
             </div>
         </form>
     </div>
