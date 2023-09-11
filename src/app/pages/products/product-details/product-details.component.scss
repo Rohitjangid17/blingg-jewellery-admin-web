@@ -1,0 +1,29 @@
+.image-compress-box {
+    height: 110px;
+    width: 110px;
+    border: 2px solid #1E293B;
+}
+
+.material-image-compress-icon {
+    color: #1E293B;
+    cursor: pointer;
+}
+
+label {
+    color: #1E293B;
+    font-weight: 500;
+}
+
+.product_details_input_field::placeholder {
+    color: #1E293B;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-default {
+    background-color: #1E293B !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 7px 25px;
+}

@@ -1,0 +1,29 @@
+.custom-back-btn {
+    display: inline-block;
+    margin-left: -20px;
+
+    &:hover {
+        background: #EEEEEE;
+        transition: all 0.2s ease;
+    }
+}
+
+.back-btn-link {
+    padding: 8px 20px;
+}
+
+mat-icon {
+    color: #1E293B;
+}
+
+.back-btn-para {
+    color: #1E293B;
+    font-weight: 500;
+}
+
+.module-header {
+    color: #1E293B;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}

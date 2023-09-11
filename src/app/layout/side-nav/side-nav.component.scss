@@ -1,0 +1,45 @@
+:host {
+    .mat-icon {
+        vertical-align: middle;
+        color: white;
+    }
+}
+
+.logo {
+    text-align: center;
+    padding: 2.6rem 1rem;
+
+    h3 {
+        color: white;
+        font-size: 26px;
+    }
+}
+
+::ng-deep {
+    .mdc-list-item__primary-text {
+        color: white !important;
+        font-size: 15px !important;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+}
+
+.mat-list-item {
+    height: 44px !important;
+}
+
+.list-content {
+    border-radius: 6px;
+    margin: 5px 0;
+
+    &:hover {
+        background-color: rgba(138, 138, 138, 0.517);
+        transition: all 0.2s ease;
+    }
+}
+
+.list-item-active {
+    background-color: rgba(138, 138, 138, 0.517);
+}

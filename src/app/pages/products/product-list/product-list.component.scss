@@ -1,0 +1,49 @@
+.product-search-input-box::placeholder {
+    color: #1E293B;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.grid-view-material-icon,
+.list-view-material-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #1E293B;
+}
+
+.btn-default {
+    background-color: #1E293B !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 7px 25px;
+}
+
+.product-card-screen {
+    height: 61vh;
+}
+
+.card {
+    padding: 12px;
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.product-name {
+    font-size: 13px;
+}
+
+.share-material-icon,
+.vert-material-icon {
+    font-size: 22px;
+}
+
+.screen-set {
+    border: 2px solid #1E293B;
+    padding: 8px;
+    border-radius: 3px;
+}
