@@ -19,6 +19,10 @@ import { ProductsComponent } from './pages/products/products.component';
 import { CustomHeaderComponent } from './shared/component/custom-header/custom-header.component';
 import { ProductListComponent } from './pages/products/product-list/product-list.component';
 import { ProductDetailsComponent } from './pages/products/product-details/product-details.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { PagesComponent } from './pages/pages/pages.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ProductDetailsComponent } from './pages/products/product-details/produc
     ProductsComponent,
     CustomHeaderComponent,
     ProductListComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    OrdersComponent,
+    CategoriesComponent,
+    PagesComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
