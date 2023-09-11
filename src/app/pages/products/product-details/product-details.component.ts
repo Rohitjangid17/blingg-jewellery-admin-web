@@ -38,6 +38,7 @@ export class ProductDetailsComponent {
       productPrice: this.productCreateForm.get('productPrice')?.value,
       productDiscountPrice: this.productCreateForm.get('productDiscountPrice')?.value,
       productDescription: this.productCreateForm.get('productDescription')?.value,
+      image: "",
     }
 
     this._commonService.productCreate(productData).subscribe((res: ProductDetails) => {

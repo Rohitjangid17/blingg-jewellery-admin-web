@@ -4,4 +4,5 @@ export interface ProductDetails {
     productPrice: string,
     productDiscountPrice: string,
     productDescription: string,
+    image: string,
 }
